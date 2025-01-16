@@ -1,0 +1,22 @@
+India_Router has three connected networks:
+172.16.1.0
+100.1.1.0
+150.1.1.0
+
+India_Router.
+•	Click India_Router.
+•	Select the CLI tab and enter the following commands. (Press enter after entering each commands)
+•	Router>
+•	Router>en
+•	Router#config t
+•	Router(config)#router eigrp 10
+•	Router(config-router)#network 172.16.1.0 0.0.0.255 
+•	Router(config-router)#network 100.1.1.0 0.0.0.255 
+•	Router(config-router)#network 150.1.1.0 0.0.0.255 
+•	Router(config-router)#end
+•	Router#copy run start
+
+----
+Confirm Configuration 
+type
+> show ip protocols
